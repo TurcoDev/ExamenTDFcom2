@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ej 3</title>
+  <!-- Estilos para visualizar los bloques correctamente -->
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    header,
+    aside,
+    section {
+      margin: 10px;
+      height: 200px;
+    }
+
+    header {
+      height: 200px;
+      background-color: rgb(8, 121, 191);
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+    }
+
+    aside {
+      height: 640px;
+      width: 35%;
+      background-color: rgb(244, 67, 111);
+    }
+
+    article{
+      width: 65%;
+    }
+
+    .containerLarge, .containerShort{
+      display: flex;
+      justify-content: center;
+    }
+
+    .containerLarge{
+      flex-wrap: wrap;
+    }
+
+    .large{
+      width: 100%;
+      background-color: rgb(67, 244, 123);
+    }
+
+    .short{
+      width: 50%;
+      background-color: rgb(224, 53, 243);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Posible estructura HTML para dividir los bloques -->
+  <h1>Ej3 Examen Javascript Agosto 22</h1>
+
+  <header></header>
+  <main>
+    <aside></aside>
+    <article>
+      <div class="containerLarge">
+        <section class="large"></section>
+        <section class="large"></section>
+      </div>
+      <div class="containerShort">
+        <section class="short"></section>
+        <section class="short"></section>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>

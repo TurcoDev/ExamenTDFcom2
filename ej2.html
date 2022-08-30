@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ej2</title>
+  <!-- Estilos para visualizar las cajas correctamente -->
+  <style>
+    .caja{
+      height: 100px;
+      width: 100px;
+      background-color: aquamarine;
+      border: 3px solid;
+      margin: 20px;
+      display: inline-block;
+      font-size: 36px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Estructura HTML -->
+  <h1>Ej2 Examen Javascript Agosto 22</h1>
+  <input type="number">
+  <button>Crear Cajas</button>
+  <div class="container" id="container"></div>
+
+  <!-- Script de Javascript para la creacion de cajas -->
+  <script>
+    const boton = document.querySelector('button');
+    boton.addEventListener('click', crearCajas);
+
+    function crearCajas() {
+      const contenedor = document.getElementById('container');
+      const input = document.querySelector('input');
+      for (let i = 0; i < input.value; i++) {
+        // const caja = document.createElement('div')
+        contenedor.innerHTML += `<div class="caja">${i}</div>`;
+      }
+    }
+  </script>
+</body>
+</html>
